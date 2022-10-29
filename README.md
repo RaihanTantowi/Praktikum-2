@@ -8,8 +8,6 @@ Matkul : Pemrograman Orientasi Objek
 ```
 
 ### 1. File Person.java
-program File person.java ini adalah membuat class Person lalu membuat 2 buah objek yang bernama Antor dan Riko dan pastinya membuat 2 file dengan codingan yang berbeda, file 1 untuk pendeklarasian class dan file 2 untuk membuat objek nya, masing - masing objek tersebut memiliki atribut seperti nama, Jeniskelamin, dan umur, lalu atribut ini akan dijadikan sebuah *"inputan"* yang nantinya akan menghasilkan sebuah *"output"*.
-
 * **CODINGAN FILE 1 (Person.java):**
 ```java
 public class Person {
@@ -40,14 +38,32 @@ public class Person {
 ```
 
 
-### 2. Folder Latihan 2
-Program latihan 2 ini adalah membuat *"class"* yang bernama AkunBank dan kemudian membuat sebuah *"objek"* yang bernama AkunBankk dengan menetapkan nilai saldo awal Rp. 100000, program ini dibuat dengan mengaplikasikan penggunaan *"instance method"* yang kemudian method tersebut akan di panggil dan akan menampilkan sebuah ouput dari method tersebut, berikut adalah 3 instance method dari sebuah program : 
-```md
-* Method **simpanUang()** 
-* Method **ambilUang()** 
-* Method **cekSaldo()** 
-```
+### 2. File PersonBeraksi.java
+* **CODINGAN FILE 2 (PersonBeraksi.java):**
+```java
+public class PersonBeraksi{
+    public static void main(String[] args){
+    // Membuat object
+    Person Anto = new Person();
+    Person Riko = new Person();
+    /* memanggil atribut dan memberi nilai */
+    Anto.setNama("Anto");
+    Anto.setJenisKelamin("Laki-laki");
+    Anto.setUmur(18);
 
+    Riko.setNama("Riko");
+    Riko.setJenisKelamin("Laki-laki");
+    Riko.setUmur(19);
+    System.out.println("Nama: " + Anto.getNama());
+    System.out.println("Jenis Kelamin: " + Anto.getJenisKelamin());
+    System.out.println("Umur: " + Anto.getUmur());
+    System.out.println("======================================");
+    System.out.println("Nama: " + Riko.getNama());
+    System.out.println("Jenis Kelamin: " + Riko.getJenisKelamin());
+    System.out.println("Umur: " + Riko.getUmur());
+    }
+    }
+```
 
 * **Hasil output program:**
 
